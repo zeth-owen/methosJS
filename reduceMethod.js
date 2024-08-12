@@ -46,12 +46,10 @@ Example Input: [[1, 2], [3, 4], [5, 6]]
 Expected Output: [1, 2, 3, 4, 5, 6]*/
 
 const twoD_Arr =  [[1, 2], [3, 4], [5, 6]]
-const flattenedArr = []
 const flattenArr = twoD_Arr.reduce((acc, cur) =>
-    acc.concat(cur),
-    flattenedArr    
+    acc.concat(cur),[]    
 )
-console.log(flattenedArr)
+console.log(flattenArr)
 
 
 
@@ -61,3 +59,10 @@ console.log(flattenedArr)
 Problem: Given an array of numbers, use .reduce() to calculate the product of all the elements.
 Example Input: [1, 2, 3, 4]
 Expected Output: 24*/
+
+const arrNum = [1, 2, 3, 4]
+const arrSum = arrNum.reduce((acc, cur) => 
+    acc + cur, 0
+)
+console.log(arrSum)
+
